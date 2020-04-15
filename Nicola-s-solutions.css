@@ -99,3 +99,101 @@
 
     100% { transform: rotate(0);}
 }
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: spostati-sopra 2s linear infinite;
+}
+
+@keyframes spostati-sopra {
+    0% { left: 10%;}
+
+    50% { left: calc(100% - 60px);}
+
+    100% { left: 10%;}
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: spostati-sotto 2s linear infinite;
+}
+
+@keyframes spostati-sotto {
+    0% { right: 10%;}
+
+    50% { right: calc(100% - 60px);}
+
+    100% { right: 10%;}
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: spostati-del-tutto-sopra 3s linear;
+}
+
+@keyframes spostati-del-tutto-sopra {
+    0% {
+        left: 10%;
+        top: -10px;
+     }
+
+     25% {
+         left: 100%;
+         top: -10px;
+     }
+
+     50% {
+         left: calc(100% - 10px);
+         top: 100%;
+     }
+
+     75% {
+         left: -10px;
+         top: 100%;
+     }
+
+     90% {
+         left: -5px;
+         top: -20px;
+     }
+
+     100% {
+         left: 10%;
+         top: -10px;
+     }
+
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: spostati-del-tutto-sotto 3s linear;
+}
+
+@keyframes spostati-del-tutto-sotto {
+    0% {
+        right: 10%;
+        bottom: -10px;
+     }
+
+     25% {
+         right: 100%;
+         bottom: -5px;
+     }
+
+     50% {
+         right: calc(100% - 10px);
+         bottom: 100%;
+     }
+
+     75% {
+         right: -60px;
+         bottom: 100%;
+     }
+
+     90% {
+         right:  -60px;
+         bottom: -5px;
+     }
+
+     100% {
+         right: 10%;
+         bottom: -10px;
+     }
+
+}
