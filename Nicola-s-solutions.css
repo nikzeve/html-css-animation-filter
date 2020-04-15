@@ -49,3 +49,53 @@
 .ex-6-img:hover {
     filter: grayscale(1);
 }
+
+.ex-7-img {
+    transition: 3s;
+}
+
+.ex-7-img:hover {
+    filter: sepia(2) blur(2px);
+}
+
+.ex-8-img {
+    transition: 3s;
+}
+
+.ex-8-img:hover {
+    filter: saturate(3) brightness(2);
+    border-radius: 5%;
+}
+
+.ex-9-img {
+    transition: 3s;
+}
+
+.ex-9-img:hover {
+    filter: grayscale(1) contrast(2) ;
+    border-radius: 5%;
+    transform: scale(.8);
+}
+
+.ex-10-icon {
+    animation: spin 60s linear infinite;
+    /* si potrebbe creare un orologio usando le animation, che figata */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
+.ex-11-icon:hover {
+    animation: spin-incompleto 2s linear;
+}
+
+@keyframes spin-incompleto {
+    0% { transform: rotate(0);}
+
+    75% { transform: rotate(273.75deg);}
+
+    100% { transform: rotate(0);}
+}
